@@ -178,12 +178,12 @@ def run():
         frame_compare = gray[:np.shape(gray)[0]][:np.shape(gray)[1]]
         diudiudiu.recognize(draw)
         # put the text into video
-        num_frames += 1
-        cv2.putText(draw, f'FPS{num_frames / (time.time() - since):.2f}', (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.2,
-                    (0, 0, 255), 2)
-        cv2.imshow('Video', draw)
-        if cv2.waitKey(20) & 0xFF == ord('q'):
-            break
+        #num_frames += 1
+        #cv2.putText(draw, f'FPS{num_frames / (time.time() - since):.2f}', (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.2,
+        #            (0, 0, 255), 2)
+        #cv2.imshow('Video', draw)
+        #if cv2.waitKey(20) & 0xFF == ord('q'):
+        #    break
 
 
     video_capture.release()
